@@ -1,10 +1,15 @@
 :root {
-  --black: #0a0a0b;
-  --black-soft: #121214;
-  --white: #f5f3f4;
-  --white-muted: rgba(245, 243, 244, 0.65);
+  --bg: #060b18;
+  --bg-soft: #0d1428;
+  --white: #f2f0f7;
+  --white-muted: rgba(242, 240, 247, 0.65);
+  --blue: #6e93fb;
+  --purple: #b07af7;
+  --green: #5eebc0;
+  --blue-soft: rgba(110, 147, 251, 0.35);
+  --green-soft: rgba(94, 235, 192, 0.3);
   --pink: #ff7eb6;
-  --pink-soft: rgba(255, 126, 182, 0.35);
+  --pink-soft: rgba(255, 126, 182, 0.3);
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", "Helvetica Neue", sans-serif;
 }
@@ -20,7 +25,7 @@ html {
 }
 
 body {
-  background: var(--black);
+  background: var(--bg);
   color: var(--white);
   font-family: var(--font-body);
   font-weight: 300;
@@ -70,8 +75,8 @@ body {
   z-index: -1;
   background: radial-gradient(
     closest-side,
-    rgba(10, 10, 11, 0.92),
-    rgba(10, 10, 11, 0.45) 55%,
+    rgba(6, 11, 24, 0.94),
+    rgba(6, 11, 24, 0.5) 55%,
     transparent 78%
   );
   filter: blur(10px);
@@ -80,20 +85,20 @@ body {
 .title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(4rem, 14vw, 9rem);
+  font-size: clamp(3rem, 12vw, 7rem);
   letter-spacing: 0.02em;
   line-height: 1;
 }
 
 .title span {
-  color: var(--pink);
+  color: var(--purple);
 }
 
 .intro {
   margin-top: 1.5rem;
   font-style: italic;
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2.8vw, 1.4rem);
   color: var(--white-muted);
   letter-spacing: 0.02em;
 }
@@ -117,7 +122,7 @@ body {
 .scroll-hint-line {
   width: 1px;
   height: 3rem;
-  background: linear-gradient(to bottom, var(--pink), transparent);
+  background: linear-gradient(to bottom, var(--purple), transparent);
   animation: floatLine 2s ease-in-out infinite;
 }
 
@@ -139,14 +144,14 @@ body {
 
 .line p {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 4.5vw, 2.2rem);
-  line-height: 1.6;
+  font-size: clamp(1.3rem, 4.3vw, 2.1rem);
+  line-height: 1.7;
   text-align: center;
-  max-width: 34ch;
+  max-width: 36ch;
 }
 
 .line em {
-  color: var(--pink);
+  color: var(--blue);
   font-style: italic;
 }
 
@@ -160,7 +165,7 @@ body {
 .divider span {
   font-size: 1.6rem;
   opacity: 0.7;
-  filter: grayscale(0.4);
+  filter: grayscale(0.3);
 }
 
 /* ---------- Animación al hacer scroll ---------- */
@@ -198,7 +203,7 @@ body {
 .final h2 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2.2rem, 7vw, 4rem);
+  font-size: clamp(2rem, 6.5vw, 3.4rem);
   color: var(--pink);
   margin-top: 1rem;
 }
